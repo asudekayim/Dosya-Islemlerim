@@ -68,7 +68,7 @@ namespace Gelecegi_Yazanlar_1
             StreamWriter kaydet = new StreamWriter(saveFileDialog1.FileName);
             kaydet.WriteLine(richTextBox1.Text);
             kaydet.Close();
-            MessageBox.Show("Metin belgesine kayit yapildi.", "BİLGİ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show("Metin belgesine kayit yapildi.", "BİLGİ", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
