@@ -63,12 +63,12 @@ namespace Gelecegi_Yazanlar_1
 
         private void button_yazdir_Click(object sender, EventArgs e)
         {
-            saveFileDialog1.Filter = "Metin Dosyasý | *.txt";
+            saveFileDialog1.Filter = "Metin Dosyasi | *.txt";
             saveFileDialog1.ShowDialog();
             StreamWriter kaydet = new StreamWriter(saveFileDialog1.FileName);
             kaydet.WriteLine(richTextBox1.Text);
             kaydet.Close();
-            MessageBox.Show("Metin belgesine kayýt yapýldý.", "BÝLGÝ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show("Metin belgesine kayit yapildi.", "BİLGİ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }
